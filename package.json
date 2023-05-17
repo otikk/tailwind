@@ -1,0 +1,22 @@
+{
+  "name": "tailwindcss-pure-css",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tw:build": "tailwindcss build -i  src/css/tailwind.css -o  public/css/tailwind.css",
+    "tw:prod": "NODE_ENV=production postcss build  src/css/tailwind.css -o  public/css/tailwind.css",
+    "tw:watch": "onchange \"tailwind.config.js\" \"src/**/*.css\" -- npm run tw:build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^5.1.15",
+    "postcss": "^8.4.23",
+    "purecss": "^3.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "description": ""
+}
