@@ -5,7 +5,8 @@
   "scripts": {
     "tw:build": "tailwindcss build -i  src/css/tailwind.css -o  public/css/tailwind.css",
     "tw:prod": "NODE_ENV=production postcss build  src/css/tailwind.css -o  public/css/tailwind.css",
-    "tw:watch": "onchange \"tailwind.config.js\" \"src/**/*.css\" -- npm run tw:build"
+    "tw:watch": "onchange \"tailwind.config.js\" \"src/**/*.css\" -- npm run tw:build",
+    "build:css": "tailwindcss build src/css/tailwind.css -o public/output.css"
   },
   "author": "",
   "license": "ISC",
